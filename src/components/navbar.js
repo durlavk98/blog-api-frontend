@@ -6,10 +6,10 @@ class Navbar extends Component {
     return (
       <nav className="navbar navbar-expand-lg navbar-light bg-light">
         <div className="container-fluid">
-        <Link to='/' className="navbar-brand">
+        <Link to='/' className="navbar-brand mx-24">
           My Blog
         </Link>
-        <div className="collapse navbar-collapse" id="navbarSupportedContent">
+        <div className="collapse navbar-collapse mx-4" id="navbarSupportedContent">
           <ul className="navbar-nav me-auto mb-2 mb-lg-0">
             
             <li className="nav-item">
@@ -17,7 +17,7 @@ class Navbar extends Component {
             </li>
 
             <li className="nav-item">
-              <a className="nav-link active" aria-current="page" href="https://durlavk98.github.io/portfolio/">About</a>
+              <Link to='/about' className="nav-link active" aria-current="page">About</Link>
             </li>
             
           </ul>

@@ -6,6 +6,7 @@ import Navbar from './components/navbar';
 import PostList from './components/postList';
 import ShowPost from './components/showPost';
 import HomePage from './components/homePage';
+import About from './components/about';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <Route exact path='/' component={HomePage}/>
         <Route exact path='/posts' component={PostList}/>
         <Route exact path='/posts/:id' component={ShowPost}/>
+        <Route exact path='/about' component={About}/>
       </>
     </Router>
   );

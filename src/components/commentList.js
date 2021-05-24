@@ -57,7 +57,7 @@ class CommentList extends Component {
   render() {
     return (
       <div className={styles.commentbody}>
-        <h3 className={styles.commentHead}>Some of your thoughts on this {this.props.postid} -</h3>
+        <h3 className={styles.commentHead}>Some of your thoughts on this post -</h3>
         {this.commentList()}
       </div>
     )

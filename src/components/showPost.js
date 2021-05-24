@@ -37,16 +37,19 @@ class ShowPost extends Component {
   render() {
     const date = new Date(this.state.date);
     return (
-      <div className="mx-4">
+      <div className="mx-32">
         <h1 className={styles.postTitle}>{this.state.title}</h1>
-        <p className="{styles.postDetails} mt-2">
+        <p className="{styles.postDetails} mt-2 mb-8">
           Posted On- <span style={{color:"#777"}}>{date.toDateString()}</span>, by <span style={{color:"#777"}}>{this.state.author}</span>
         </p>
         <p className={styles.postBody}>
           {this.state.body}
         </p>
         <hr style={{color:"#999"}}/>
-        <button className="mx-4" onClick={()=>{this.setState({showComments: !this.state.showComments})}}>Show Comments {this.state.showComments}</button>
+        <button className="mx-4 my-2 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded" 
+        onClick={()=>{this.setState({showComments: !this.state.showComments})}}>
+          Show Comments {this.state.showComments}
+        </button>
         {this.state.showComments &&<CommentList postid={this.state.id}/>}
         <hr style={{color:"#999"}}/>
         <CreateComment postid={this.state.id}/>

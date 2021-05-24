@@ -52,7 +52,7 @@ class CreateComment extends Component {
   
   render() {
     return (
-      <div className=" mx-4">
+      <div className="border p-4">
         <h3 className={styles.CreateCommentHead}>Leave a Comment</h3>
         <form onSubmit={this.onSubmit}>
           <div className="form-group">
