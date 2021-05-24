@@ -48,6 +48,7 @@ class HomePage extends Component {
           <img src="/blog.svg" alt="blog poster" style={{width: "50vw"}}/>
         </div>
         <div id="featured">
+          <h1 className="text-4xl text-center mb-8 underline">Featured Post</h1>
           <h1 className={styles.postTitle}>{this.state.title}</h1>
           <p className="{styles.postDetails} mt-2 mb-4">
             Posted On- <span style={{color:"#777"}}>{date.toDateString()}</span>, by <span style={{color:"#777"}}>{this.state.author}</span>
